@@ -1,0 +1,22 @@
+{
+  "name": "maplepomo",
+  "version": "1.0.0",
+  "description": "pomodoro app inspired by maplestory",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlonk/maplepomo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlonk/maplepomo/issues"
+  },
+  "homepage": "https://github.com/vlonk/maplepomo#readme",
+  "devDependencies": {
+    "electron": "^35.1.2"
+  }
+}
