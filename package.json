@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vlonk/maplepomo#readme",
   "devDependencies": {
-    "electron": "^35.1.2"
+    "electron": "^35.1.2",
+    "electron-packager": "^17.1.2"
   }
 }

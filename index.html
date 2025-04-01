@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>maplepomo</title>
+  <!-- Google Font: Merienda (for a cozy, friendly vibe) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap">
+
+  <style>
+    /* General Page Styling */
+    body {
+      margin: 0;
+      padding: 50px 20px;
+      text-align: center;
+      font-family: 'Merienda', cursive;
+      background-color: #FAF3E0; /* A soft, warm background color */
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* Container for the pot image, ensuring the pot aligns at the bottom.
+       No border or shadow, so the pot appears seamless against the background. */
+    #pot-container {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
+
+    /* Pot image is absolutely positioned so its bottom aligns with the container’s bottom */
+    #pot-image {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 100%;
+    }
+
+    /* Timer text styling */
+    #timer {
+      font-size: 2em;
+      margin: 20px;
+      font-weight: 400;
+      font-family: 'Merienda', cursive;
+    }
+
+    #start-button {
+      /* Button dimensions should match your pixel-button image size */
+      width: 150px;
+      height: 50px;
+
+      /* Use the normal-state pixel button image */
+      background: url('assets/start.png') no-repeat center center;
+      background-size: contain;
+
+      /* Use a retro pixel font for the text */
+      font-size: 10px;
+      color: #fff;
+      text-transform: uppercase;
+
+      /* Center text vertically/horizontally */
+      line-height: 40px;
+      text-align: center;
+
+      /* Button behavior and layout */
+      cursor: pointer;
+      border: none;
+      outline: none;
+      position: relative;
+      margin-top: 20px; /* Add spacing as desired */
+    }
+
+    /* Change to a hover image for a nice effect */
+    /* #start-button:hover {
+      background: url('assets/start.png') no-repeat center center;
+      background-size: contain;
+    } */
+
+    #stop-button {
+      width: 150px;
+      height: 50px;
+      background: url('assets/stop.png') no-repeat center center;
+      background-size: contain;
+      /* font-family: 'Press Start 2P', cursive; */
+      font-size: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 40px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* #stop-button:hover {
+      background: url('assets/stop.png') no-repeat center center;
+      background-size: contain;
+    } */
+
+  </style>
+</head>
+<body>
+  <h1>maple pomodoro</h1>
+
+  <!-- Container to ensure all pot images align at the bottom -->
+  <div id="pot-container">
+    <img id="pot-image" src="assets/pot1.png" alt="Pot stage">
+  </div>
+
+  <div id="timer">25:00</div>
+  <div id="buttons">
+    <button id="start-button"></button>
+    <button id="stop-button"></button>
+  </div>
+  
+  <!-- Link to our timer logic -->
+  <script src="render.js"></script>
+</body>
+</html>
